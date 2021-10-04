@@ -26,3 +26,13 @@ export PATH=$PATH:$ANDROID_HOME/platform-tools
 # export TERM=wezterm
 
 export MICRO_TRUECOLOR=1
+
+# begin bash_completion configuration for appcenter completion
+[ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
+[ -f /usr/share/bash-completion/bash_completion ] && . /usr/share/bash-completion/bash_completion
+[ -f /etc/bash_completion ] && . /etc/bash_completion
+# end bash_completion configuration for appcenter completion
+
+# begin appcenter completion
+source /home/mikasa/.appcenter/completion.sh
+# end appcenter completion
