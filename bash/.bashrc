@@ -33,6 +33,9 @@ export MICRO_TRUECOLOR=1
 [ -f /etc/bash_completion ] && . /etc/bash_completion
 # end bash_completion configuration for appcenter completion
 
-# begin appcenter completion
+# Appcenter completion
 source /home/mikasa/.appcenter/completion.sh
-# end appcenter completion
+
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"

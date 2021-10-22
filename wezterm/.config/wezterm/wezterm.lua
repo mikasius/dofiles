@@ -6,12 +6,12 @@ return {
 
 	-- Window settings.
 	window_background_opacity = 0.95,
-	-- window_padding = {
-		-- left = 5,
-		-- right = 5,
-		-- top = 5,
-		-- bottom = 5,
-	-- },
+	window_padding = {
+		left = 5,
+		right = 5,
+		top = 5,
+		bottom = 0,
+	},
 
 	-- Font config.
 	font = wezterm.font("FiraCode Nerd Font"),
@@ -25,7 +25,4 @@ return {
 
 	-- Working dir.
 	default_cwd = "~/projects",
-
-	-- Run usefull programs.
-	default_prog = {"/usr/local/bin/fish", "-l"},
 }
