@@ -6,6 +6,12 @@ call plug#end()
 
 set number
 set autoindent
+set shell=fish
+set ai 		" Auto indent
+set si 		" Smart indent
+set nowrap	" No wrap lines 
+set cursorline
+set background=dark
 
 syntax enable
 filetype plugin indent on

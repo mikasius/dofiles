@@ -21,7 +21,7 @@ return {
 	color_scheme = "nord",
 
 	-- System utility.
-	term = "wezterm",
+	-- term = "wezterm",
 
 	-- Working dir.
 	default_cwd = "~/projects",

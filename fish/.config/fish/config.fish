@@ -4,7 +4,7 @@ end
 
 set fish_greeting
 
-rvm default
+# rvm default
 
 set -gx ANDROID_HOME $HOME/Android/Sdk
 fish_add_path $ANDROID_HOME/emulator
