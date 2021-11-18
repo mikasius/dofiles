@@ -1,6 +1,6 @@
 {
     "autoload": {
-        "Logitech K850": "new preset"
+        "Logitech K850": "K850 remap"
     },
     "macros": {
         "keystroke_sleep_ms": 10
