@@ -4,6 +4,9 @@ end
 
 set fish_greeting
 
+# Set default version of NodeJS to LTS, get from .nvmrc
+nvm use
+
 # rvm default
 
 set -gx ANDROID_HOME $HOME/Android/Sdk

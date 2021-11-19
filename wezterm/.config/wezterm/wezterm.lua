@@ -1,6 +1,9 @@
 local wezterm = require 'wezterm';
 
 return {
+	-- Default shell.
+	default_prog = {"/usr/local/bin/fish", "-l"},
+
 	-- Disable tab bar.
 	enable_tab_bar = false,
 
