@@ -15,11 +15,12 @@ call plug#end()
 set number
 set autoindent
 set shell=fish
-set ai 		" Auto indent
-set si 		" Smart indent
+set ai 			" Auto indent
+set si 			" Smart indent
 set nowrap	" No wrap lines 
 set cursorline
 set background=dark
+set tabstop=2
 
 syntax enable
 filetype plugin indent on
@@ -43,5 +44,19 @@ vmap <leader>f  <Plug>(coc-format-selected)
 nmap <leader>f  <Plug>(coc-format-selected)
 
 lua << EOF
-require'lspconfig'.tsserver.setup{}
+local nvim_lsp = require('lspconfig')
+
+local on_attach = function(client, bufnr)
+	local function buf_set_keymap(...) vim.api.nvim_buf_set_keymap(bufnr, ...) end
+	local function buf_set_option(...) vim.api.nvim_buf_set_option(bufnr, ...) end
+
+	-- Mappings.
+	local opts = { noremap = true, silent = true }
+	buf_set_keymap('n', 'gd', '<Cmd>lua vim.lsp.buf.definition()<CR>', opts)
+end
+nvim_lsp.tsserver.setup {
+	on_attach = on_attach,
+	filetypes = { "typescript", "typescriptreact", "typescript.tsx" }
+	}
+
 EOF
