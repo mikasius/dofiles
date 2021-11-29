@@ -2,13 +2,13 @@ local wezterm = require 'wezterm';
 
 return {
 	-- Default shell.
-	default_prog = {"/usr/local/bin/fish", "-l"},
+	-- default_prog = {"/usr/local/bin/fish", "-l"},
 
 	-- Disable tab bar.
 	enable_tab_bar = false,
 
 	-- Window settings.
-	window_background_opacity = 0.95,
+	-- window_background_opacity = 0.95,
 	window_padding = {
 		left = 5,
 		right = 5,
