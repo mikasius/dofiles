@@ -1,0 +1,18 @@
+mikasa@mcc-tomsk-sme 
+-------------------- 
+OS: Artix Linux x86_64 
+Kernel: 5.15.5-artix1-1 
+Uptime: 3 hours, 24 mins 
+Packages: 900 (pacman) 
+Shell: bash 5.1.12 
+Resolution: 1920x1080 
+DE: Xfce 4.16 
+WM: Xfwm4 
+WM Theme: Default 
+Theme: Nordic [GTK2], Artix-dark [GTK3] 
+Icons: Qogir-dark [GTK2], matefaenzadark [GTK3] 
+Terminal: WezTerm 
+CPU: Intel i7-8700K (12) @ 4.700GHz 
+GPU: Intel CometLake-S GT2 [UHD Graphics 630] 
+Memory: 3853MiB / 31950MiB 
+
